@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarun - Developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@400;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 16vh;
+        background-color: rgb(18, 18, 62);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      /* hr tag ko dorectly color ni de skte. */
+      main hr {
+        border: 0;
+        background-color: rgb(112, 112, 215);
+        height: 1.2px;
+        margin: 40px 80px;
+      }
+      /* for changing the hyperlinks colors and underlines in the nav bar. */
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(112, 112, 215);
+        font-size: 1.01rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* this vh added by me. */
+        margin: 16vh 0;
+      }
+
+      /* yahan > use karne se sirf first vale div ko width 30% milegi. */
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        /* background-color: red; */
+        font-size: 2.5rem;
+        /* margin: 70px 0; iski jarort ni haimkyuki first section mai align-items yani vertically set kar diya hai.*/
+      }
+
+      .leftSection .buttons{
+        padding: 30px 0;
+      }
+      
+      .leftSection .btn{
+        padding: 8px 12px;
+        background-color: rgb(56, 56, 112);
+        color: white;
+        border: 2px solid white;
+        border-radius: 7px;
+        cursor: pointer;
+        font-size: 15px;
+      }
+
+      .rightSection img {
+        /* background-color: red; */
+        width: 80%;
+      }
+
+      /* Utility class alg CSS file bna skte hai iske liye. */
+      .purple {
+        color: rgb(147, 65, 224);
+      }
+
+      .text-gray {
+        color: grey;
+      }
+
+      #element {
+        color: rgb(147, 65, 224);
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+
+      .secondSection h1 {
+        font-size: 2rem;
+      }
+
+      .secondSection .horizontalLine {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        /* Added by me   */
+        margin: 6vh 0;
+        /* for vertical lines */
+        display: flex;
+      }
+
+      .secondSection .verticalLine {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        /* space b/t verticals top/bottom se zero.*/
+        margin: 0 120px;
+      }
+
+      .image-top {
+        width: 23px;
+        /* you have to learn this. */
+        position: relative;
+        top: -32px;
+        left: -13px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 93px;
+        width: 150px;
+        font-size: 14px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 110px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      footer{
+        background-color: #11111a;
+        /* height: 30vh; */
+        
+      }
+
+      .footer {
+        display: flex;
+        padding: 30px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul{
+        list-style: none;
+      }
+
+      .footer > div{
+        width: 223px;
+      }
+
+      .footer-first h1{
+        font-size: 1.4rem;
+      }
+
+      footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Tarun's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section 1  -->
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Tarun</span>
+          <div>
+            and I am a passionate
+            <!-- <div>Web developer</div> -->
+            <!-- Element to contain animated typing -->
+            <span id="element"></span>
+            <!-- resume downloading buttons -->
+            <div class="buttons">
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit Github</button>
+            </div>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="/img/Devep.png" alt="" />
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Section 2  -->
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="horizontalLine">
+          <div class="verticalLine">
+            <img class="image-top" src="/img/devep1.png" alt="" />
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              deserunt dolor officiis vero! Soluta rem porro deserunt incidunt,
+              possimus reiciendis iure reprehenderit asperiores fuga velit
+              blanditiis unde! Veniam, magnam repellendus!
+            </div>
+          </div>
+          <div class="verticalLine">
+            <img class="image-top" src="/img/yt.png" alt="" />
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              deserunt dolor officiis vero! Soluta rem porro deserunt incidunt,
+              possimus reiciendis iure reprehenderit asperiores fuga velit
+              blanditiis unde! Veniam, magnam repellendus!
+            </div>
+          </div>
+          <div class="verticalLine">
+            <img class="image-top" src="/img/fb.png" alt="" />
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              deserunt dolor officiis vero! Soluta rem porro deserunt incidunt,
+              possimus reiciendis iure reprehenderit asperiores fuga velit
+              blanditiis unde! Veniam, magnam repellendus!
+            </div>
+          </div>
+          <div class="verticalLine">
+            <img class="image-top" src="/img/twit.png" alt="" />
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              deserunt dolor officiis vero! Soluta rem porro deserunt incidunt,
+              possimus reiciendis iure reprehenderit asperiores fuga velit
+              blanditiis unde! Veniam, magnam repellendus!
+            </div>
+          </div>
+          <div class="verticalLine">
+            <img class="image-top" src="/img/insta.png" alt="" />
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              deserunt dolor officiis vero! Soluta rem porro deserunt incidunt,
+              possimus reiciendis iure reprehenderit asperiores fuga velit
+              blanditiis unde! Veniam, magnam repellendus!
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h1>Tarun's Developer Portfolio</h1>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>twitter</li>
+            </ul>
+        </div>
+        <div class="footer-third">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>twitter</li>
+            </ul>
+        </div>
+        <div class="footer-fourth">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>twitter</li>
+            </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copright &copy;tarunportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <!-- typed js CDN link => for animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web developer",
+          "Web designer",
+          "Photographer",
+          "Graphic designer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
